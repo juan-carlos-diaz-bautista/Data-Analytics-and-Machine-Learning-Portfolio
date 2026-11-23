@@ -93,7 +93,7 @@ The steps follow the numbered sections of the notebook.
 - **PCA:** 6 components explain 90.41% of the variance of the training set, which reduces the 11 numeric variables to 6. The Kaiser criterion would keep only 3 components and 69.63% of the variance, so it was not used.
 - **Component interpretation:** the first component reflects potassium, fiber, and protein (bran-like cereals), and the second reflects calories, serving weight, and sugars. The second component has the strongest correlation with the rating (-0.83), followed by the third (0.43) and the first (0.16).
 - **Categorical predictors:** `name` (unique for every cereal) and `type` (58 cold cereals and 1 hot cereal in the training set) were excluded. `mfr` was kept as a nominal variable, and `shelf` was kept as a nominal and not an ordinal variable, because the rating is lowest on the middle shelf and similar on the other two.
-- **Final dataset:** the training set has 59 cereals and the test set 15. Both have the same 14 numeric predictors (6 principal components, 6 manufacturer columns, and 2 shelf columns), no missing values, and `rating` as a separate target.
+- **Final dataset:** the training set has 59 cereals and the test set 15. Both have the same 14 numeric predictors (6 principal components, 6 manufacturer columns, and 2 shelf columns), no missing values, and `rating` as the target, saved as the last column of each file.
 
 ## Limitations
 
